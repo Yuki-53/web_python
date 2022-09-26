@@ -33,4 +33,7 @@ class UserRepository(AbstractRepository):
         return list(self._users)
 
 
+def reset_data():
+    repo = UserRepository([User('admin', [])])
+
 repo = UserRepository([User('admin', [])])

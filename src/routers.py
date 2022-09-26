@@ -13,11 +13,21 @@ def register(user: contracts.User) -> None:
         repo.add(User(user.login, []))
 
 
+@router.get("/register/list")
+def get_users():
+    return repo.list()
+
+
 @router.post("/like")
 def song_like(user_song: contracts.Song) -> None:
     repo.add_song(user_song.login, user_song.fav_song)
+    
+
+@router.get("/like/list")
+def get_songs(login: str):
+    return repo.get(login).songs
 
 
 @router.get("/recs")
-def get_recs(login: str, num: int):
+def get_recs(login: str, num: int = 5):
     return rec_model.get_rec(repo.get(login).songs, num)
