@@ -21,7 +21,7 @@ def get_users():
 @router.post("/like")
 def song_like(user_song: contracts.Song) -> None:
     repo.add_song(user_song.login, user_song.fav_song)
-    
+
 
 @router.get("/like/list")
 def get_songs(login: str):
