@@ -1,7 +1,11 @@
 from pydantic import BaseModel
 
 
-class RequestBody(BaseModel):
-    name: str
-    description: str | None = None
-    value: float
+class User(BaseModel):
+    login: str
+    password: str
+
+
+class Song(BaseModel):
+    login: str
+    fav_song: str
