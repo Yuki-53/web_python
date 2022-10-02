@@ -11,6 +11,10 @@ packages = [{include = "web_python"}]
 python = "3.9.12"
 fastapi = "0.78.0"
 uvicorn = {extras = ["standard"], version = "^0.17.6"}
+grpcio = "1.49.1"
+grpcio-tools = "1.49.1"
+protobuf = "4.21.7"
+parameterized = "^0.8.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.3.0"
