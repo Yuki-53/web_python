@@ -4,11 +4,12 @@ import grpc
 import random
 
 from definitions.builds.service_pb2 import Song
-from definitions.builds.service_pb2_grpc import TestServiceServicer, add_TestServiceServicer_to_server
+from definitions.builds.service_pb2_grpc import (
+    TestServiceServicer, add_TestServiceServicer_to_server
+)
 
 
 class Service(TestServiceServicer):
-
     def get_songs(self, request, context):
         """
         func return a song of a specific genre
@@ -21,7 +22,7 @@ class Service(TestServiceServicer):
 
 
 def execute_server():
-    """ 
+    """
     Start grpc server
     """
     server = grpc.server(ThreadPoolExecutor(max_workers=10))
