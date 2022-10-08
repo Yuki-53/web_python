@@ -5,3 +5,5 @@ src/__pycache__/*
 src/type/__pycache__/*
 src/tests/__pycache__/*
 src/tests/.pytest_cache/*
+grpc-python/tests/__pycache__/*
+grpc-python/definitions/builds/*

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Genre{
+   string genre_name = 1;
+}
+
+message Song{
+   string song_name = 123;
+}
+
+service TestService {
+   rpc get_songs (Genre) returns (Song);
+}
