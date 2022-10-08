@@ -1,6 +1,6 @@
 **Case**
 
-Database storing playlists of liked songs by users. Since this is used for a recommender system, a lot of additional information
+Database storing songs liked by users. Since this is used for a recommender system, a lot of additional information
 will need to be stored. It is also assumed that the number of entries will increase rapidly (when liking a song). 
 With a large number of users, suppose the need for a distributed database.
 It looks like using a SQL data storage would be a good solution.
@@ -11,7 +11,7 @@ Structure:
 
 **Oracle Database**
 
-Popular with developers, easy to use, clear documentation, support for long names, JSON, improved list tag, and Oracle Cloud.
+Popular with developers, clear documentation, support for long names, JSON, improved list tag, and Oracle Cloud.
 
 Advantages:
 - Large capacity
@@ -53,6 +53,7 @@ Disadvantages:
 - Performance
 - Сomplexity
 
-Conclusion
-To me it looks like mysql is a good choice, it has scalability issues, but in this case it is better than others because 
+**Conclusion**
+
+To me it looks like MySQL is a good choice, it has scalability issues, but in this case it is better than others because 
 of its simplicity, other solutions are too powerful or slow for this task
