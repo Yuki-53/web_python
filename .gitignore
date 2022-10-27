@@ -7,3 +7,4 @@ src/tests/__pycache__/*
 src/tests/.pytest_cache/*
 grpc-python/tests/__pycache__/*
 grpc-python/definitions/builds/*
+src/broker/tests/__pycache__/*
